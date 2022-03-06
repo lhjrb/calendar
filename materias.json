@@ -1,6 +1,7 @@
 {
 	"materias": [{
-			"geometria-analitica": [{
+			"name": "Geometria Analítica",
+			"info": {
 				"0": {
 					"start": "7:10",
 					"aulas": 2,
@@ -11,37 +12,41 @@
 					"aulas": 2,
 					"week": 4
 				}
-			}]
+			}
 		},
 		{
-			"portugues": [{
+			"name": "Português",
+			"info": {
 				"0": {
 					"start": "10:30",
 					"aulas": 2,
 					"week": 0
 				}
-			}]
+			}
 		},
 		{
-			"sociologia": [{
+			"name": "Sociologia",
+			"info": {
 				"0": {
 					"start": "7:10",
 					"aulas": 2,
 					"week": 1
 				}
-			}]
+			}
 		},
 		{
-			"eltronica": [{
+			"name": "Introdução Eletrônica",
+			"info": {
 				"0": {
 					"start": "8:50",
 					"aulas": 2,
 					"week": 1
 				}
-			}]
+			}
 		},
 		{
-			"programacao": [{
+			"name": "Programação 1",
+			"info": {
 				"0": {
 					"start": "7:10",
 					"aulas": 2,
@@ -52,10 +57,11 @@
 					"aulas": 2,
 					"week": 3
 				}
-			}]
+			}
 		},
 		{
-			"quimica": [{
+			"name": "Química",
+			"info": {
 				"0": {
 					"start": "8:50",
 					"aulas": 2,
@@ -66,10 +72,11 @@
 					"aulas": 2,
 					"week": 3
 				}
-			}]
+			}
 		},
 		{
-			"calculo": [{
+			"name": "Cálculo 1",
+			"info": {
 				"0": {
 					"start": "10:30",
 					"aulas": 2,
@@ -80,7 +87,7 @@
 					"aulas": 2,
 					"week": 4
 				}
-			}]
+			}
 		}
 	]
 }
