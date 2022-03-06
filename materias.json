@@ -1,5 +1,5 @@
 {
-	"materias": [{
+	"materias": {
 		"geometria-analitica": [{
 			"0": {
 				"start": "7:10",
@@ -69,5 +69,5 @@
 				"week": 4
 			}
 		}]
-	}]
+	}
 }
