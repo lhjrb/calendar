@@ -1,93 +1,80 @@
 {
 	"materias": [{
 			"name": "Geometria Analítica",
-			"info": {
-				"0": {
-					"start": "7:10",
-					"aulas": 2,
-					"week": 0
-				},
-				"1": {
-					"start": "10:30",
-					"aulas": 2,
-					"week": 4
-				}
-			}
+			"info": [{
+				"start": "8:50",
+				"aulas": 2,
+				"week": 1
+			}, {
+				"start": "10:30",
+				"aulas": 2,
+				"week": 5
+			}]
 		},
 		{
 			"name": "Português",
-			"info": {
-				"0": {
-					"start": "10:30",
-					"aulas": 2,
-					"week": 0
-				}
-			}
+			"info": [{
+				"start": "10:30",
+				"aulas": 2,
+				"week": 1
+			}]
 		},
 		{
 			"name": "Sociologia",
-			"info": {
-				"0": {
-					"start": "7:10",
-					"aulas": 2,
-					"week": 1
-				}
-			}
+			"info": [{
+				"start": "7:10",
+				"aulas": 2,
+				"week": 2
+			}]
 		},
 		{
 			"name": "Introdução Eletrônica",
-			"info": {
-				"0": {
-					"start": "8:50",
-					"aulas": 2,
-					"week": 1
-				}
-			}
+			"info": [{
+				"start": "8:50",
+				"aulas": 2,
+				"week": 2
+			}]
 		},
 		{
 			"name": "Programação 1",
-			"info": {
-				"0": {
-					"start": "7:10",
-					"aulas": 2,
-					"week": 2
-				},
-				"1": {
-					"start": "8:50",
-					"aulas": 2,
-					"week": 3
-				}
-			}
+			"info": [{
+				"start": "7:10",
+				"aulas": 2,
+				"week": 3
+			}, {
+				"start": "8:50",
+				"aulas": 2,
+				"week": 4
+			}]
 		},
 		{
 			"name": "Química",
-			"info": {
-				"0": {
+			"info": [{
 					"start": "8:50",
 					"aulas": 2,
-					"week": 2
+					"week": 3
 				},
-				"1": {
+				{
 					"start": "7:10",
-					"aulas": 2,
-					"week": 3
-				}
-			}
-		},
-		{
-			"name": "Cálculo 1",
-			"info": {
-				"0": {
-					"start": "10:30",
-					"aulas": 2,
-					"week": 3
-				},
-				"1": {
-					"start": "8:50",
 					"aulas": 2,
 					"week": 4
 				}
-			}
+			]
+		},
+		{
+			"name": "Cálculo 1",
+			"info": [{
+					"start": "10:30",
+					"aulas": 2,
+					"week": 4
+				},
+				{
+					"start": "8:50",
+					"aulas": 2,
+					"week": 5
+				}
+			]
 		}
 	]
+
 }
