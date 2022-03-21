@@ -1,6 +1,6 @@
 {
 	"materias": [{
-			"name": "Geometria Analítica B01",
+			"name": "Geometria Analítica - B01",
 			"info": [{
 				"start": "8:50",
 				"aulas": 2,
@@ -12,7 +12,7 @@
 			}]
 		},
 		{
-			"name": "Português B01",
+			"name": "Português - B01",
 			"info": [{
 				"start": "10:30",
 				"aulas": 2,
