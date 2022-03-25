@@ -1,29 +1,33 @@
 {
 	"materias": [{
-			"name": "Geometria Analítica - B01",
+			"name": "Geometria Analítica",
 			"info": [{
 				"start": "8:50",
 				"aulas": 2,
+				"sala": "B01",
 				"week": 1
 			}, {
 				"start": "10:30",
 				"aulas": 2,
+				"sala": "B08",
 				"week": 5
 			}]
 		},
 		{
-			"name": "Português - B01",
+			"name": "Português",
 			"info": [{
 				"start": "10:30",
 				"aulas": 2,
+				"sala": "B01",
 				"week": 1
 			}]
 		},
 		{
-			"name": "Sociologia -B04",
+			"name": "Sociologia",
 			"info": [{
 				"start": "7:10",
 				"aulas": 2,
+				"sala": "B04",
 				"week": 2
 			}]
 		},
@@ -32,6 +36,7 @@
 			"info": [{
 				"start": "8:50",
 				"aulas": 2,
+				"sala": "B09",
 				"week": 2
 			}]
 		},
@@ -40,10 +45,12 @@
 			"info": [{
 				"start": "7:10",
 				"aulas": 2,
+				"sala": "B07",
 				"week": 3
 			}, {
 				"start": "8:50",
 				"aulas": 2,
+				"sala": "B07",
 				"week": 4
 			}]
 		},
@@ -52,11 +59,13 @@
 			"info": [{
 					"start": "8:50",
 					"aulas": 2,
+					"sala": "B06",
 					"week": 3
 				},
 				{
 					"start": "7:10",
 					"aulas": 2,
+					"sala": "B04",
 					"week": 4
 				}
 			]
@@ -66,11 +75,13 @@
 			"info": [{
 					"start": "10:30",
 					"aulas": 2,
+					"sala": "B07",
 					"week": 4
 				},
 				{
 					"start": "8:50",
 					"aulas": 2,
+					"sala": "B08",
 					"week": 5
 				}
 			]
