@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Calibri';
+    font-size: 17px;
+    
+}
+
+table, td,th{
+    margin-top: 1em;
+    border: 1px solid black;
+    border-collapse: collapse
+}
+
+thead{
+    color: aliceblue;
+    background-color: #5E498C;
+}
+th {
+    width: 3em;
+    height: 2em;
+    
+}
+td{
+    text-align: center
+}
+table{
+    width: 70%;
+    margin-inline: auto;
+}
+
+
+.destaque > th, .destaque >td {
+        background-color: #41A69C;
+        font-size: 1.40em;
+    }
+
+@media screen and (max-width: 800px) {
+        table{
+            width: 90%;
+        }
+        th,td{
+            font-size: 0.8em;
+        }
+        .destaque > th, .destaque >td{
+        font-size: 1em;
+    }
+} 
