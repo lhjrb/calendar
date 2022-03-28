@@ -1,211 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-family: 'Calibri';
-    font-size: 17px;
-    
-}
-
-table, td,th{
-    margin-top: 1em;
-    border: 1px solid black;
-    border-collapse: collapse
-}
-
-thead{
-    color: aliceblue;
-    background-color: #5E498C;
-}
-th {
-    width: 3em;
-    height: 2em;
-    
-}
-td{
-    text-align: center
-}
-table{
-    width: 70%;
-    margin-inline: auto;
-}
-
-
-.destaque > th, .destaque >td {
-        background-color: #41A69C;
-        font-size: 1.40em;
-    }
-
-/* Gerar logo com uma classe*/
-</style>
-
-<body>
-    <table>
-        <thead>
-            <tr>
-                <th></th>
-                <th>7:10</th>
-                <th>8:00</th>
-                <th>8:50</th>
-                <th>9:40</th>
-                <th>10:30</th>
-                <th>11:20</th>
-            </tr>
-        </thead>
-        <tr id="segunda">
-            <th>Segunda</th>
-        </tr>
-        <tr id="terca">
-            <th>Terça</th>
-        </tr>
-        <tr id="quarta">
-            <th>Quarta</th>
-        </tr>
-        <tr id="quinta">
-            <th>Quinta</th>
-        </tr>
-        <tr id="sexta">
-            <th>Sexta</th>
-        </tr>
-        <tr id="sabado">
-            <th>Sábado</th>
-        </tr>
-        <tr id="domingo">
-            <th>Domingo</th>
-        </tr>
-    </table>
-</body>
-
-<script>
-    horas = ["7:10","8:00","8:50","9:40","10:30","11:20"]
-    diadasemana = ["domingo", "segunda","terca","quarta","quinta","sexta","sabado"]
-    var requestURL = 'https://lhjrb.github.io/calendar/materias.json'
-    var request = new XMLHttpRequest()
-    request.open('GET', requestURL)
-    request.responseType = 'json'
-    request.send()
-    request.onload = function() {
-        var superHeroes = request.response
-        var materias = request.response
-        createtable(materias['materias'])
-        }
-        
-
-    function semanafilter(materias, semana){
-        full = []
-
-        for(var i = 0; i < materias['length']; i++){
-            for(var w = 0; w < materias[i]['info']['length']; w++){
-                if(materias[i]['info'][w]['week'] === semana){
-                    
-                        nome = materias[i]['name']
-                        start = materias[i]['info'][w]['start']
-                        aulas = materias[i]['info'][w]['aulas']
-                        full  = [...full,{nome, start, aulas}]
-                        
-                }
-            }  
-
-            
-        }
-        
-        return full
-    }
-
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <title>Calendario</title>
+    </head>
     
 
-    function createtd(tr, value, aulas){
-        var td = document.createElement('td')
-        td.append(value)
-        td.setAttribute('colspan', aulas)
-        tr.append(td)
-    }
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>7:10</th>
+                    <th>8:00</th>
+                    <th>8:50</th>
+                    <th>9:40</th>
+                    <th>10:30</th>
+                    <th>11:20</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="segunda">
+                    <th>Segunda</th>
+                </tr>
+                <tr id="terca">
+                    <th>Terça</th>
+                </tr>
+                <tr id="quarta">
+                    <th>Quarta</th>
+                </tr>
+                <tr id="quinta">
+                    <th>Quinta</th>
+                </tr>
+                <tr id="sexta">
+                    <th>Sexta</th>
+                </tr>
+                <tr id="sabado">
+                    <th>Sábado</th>
+                </tr>
+                <tr id="domingo">
+                    <th>Domingo</th>
+                </tr>
+            </tbody>
+        </table>
+    </body>
 
-    function createtd_void(tr, aulas){
-        var td_void = document.createElement('td')
-        td_void.setAttribute('colspan', aulas)
-        tr.append(td_void)
-    }
-
-    
-
-    function createtable(materias){
-
-        
-        function compare(a,b) {
-            a = parseInt(a.start.split(':')[0])
-            b = parseInt(b.start.split(':')[0])
-
-            return a == b? 0 : a>b ? 1:-1;
-        }
-
-        for(var i = 0; i < diadasemana.length ; i++){
-            startarray = []
-            var base = horas.slice()
-            var tr = document.querySelector('#' + diadasemana[i])
-            filter = semanafilter(materias, i)
-            filter.sort(compare)
-            filter.forEach(element => {
-                startarray = [...startarray, element['start']]
-                
-            })
-            z = 0
-            horas.forEach((element) => {
-            
-            if (startarray.includes(element)) {
-                base.splice(base.findIndex(w => w === element), filter[z]['aulas'],'w')
-                z += 1
-            }else{
-                
-                acharindex = base.findIndex(x => x === element)
-                if(acharindex !== -1){
-                    base.splice(acharindex, 1,'x')
-                }
-                
-            }
-            
-        });
-
-            c = 0
-            x = 0
-            base.forEach((element, index) => {
-                console.log()
-                if(element === 'x'){
-                    x += 1
-                    if(base[index + 1] === 'w' || base[index + 1] === undefined){
-                        createtd_void(tr, x)
-                    }
-                }else{
-
-                    createtd(tr, filter[c]['nome'], filter[c]['aulas'])
-                    c += 1
-                    x = 0
-                }
-                
-                
-            })
-            
-    }
-}
-    
-    date = new Date().getDay()
-    tr_destaque = document.querySelector('#' + diadasemana[date])
-    
-    tr_destaque.setAttribute('class', 'destaque')
-    
-
-
-
-
-</script>
+    <script src="script.js"></script>
 </html>
