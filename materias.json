@@ -2,16 +2,18 @@
 	"materias": [{
 			"name": "Geometria Analítica",
 			"info": [{
-				"start": "8:50",
-				"aulas": 2,
-				"sala": "B01",
-				"week": 1
-			}, {
-				"start": "10:30",
-				"aulas": 2,
-				"sala": "B08",
-				"week": 5
-			}]
+					"start": "8:50",
+					"aulas": 2,
+					"sala": "B01",
+					"week": "Segunda"
+				},
+				{
+					"start": "10:30",
+					"aulas": 2,
+					"sala": "B08",
+					"week": "Sexta"
+				}
+			]
 		},
 		{
 			"name": "Português",
@@ -19,7 +21,7 @@
 				"start": "10:30",
 				"aulas": 2,
 				"sala": "B01",
-				"week": 1
+				"week": "Segunda"
 			}]
 		},
 		{
@@ -28,7 +30,7 @@
 				"start": "7:10",
 				"aulas": 2,
 				"sala": "B04",
-				"week": 2
+				"week": "Terça"
 			}]
 		},
 		{
@@ -37,22 +39,24 @@
 				"start": "8:50",
 				"aulas": 2,
 				"sala": "B09",
-				"week": 2
+				"week": "Terça"
 			}]
 		},
 		{
 			"name": "Programação 1",
 			"info": [{
-				"start": "7:10",
-				"aulas": 2,
-				"sala": "B07",
-				"week": 3
-			}, {
-				"start": "8:50",
-				"aulas": 2,
-				"sala": "B07",
-				"week": 4
-			}]
+					"start": "7:10",
+					"aulas": 2,
+					"sala": "B07",
+					"week": "Quarta"
+				},
+				{
+					"start": "8:50",
+					"aulas": 2,
+					"sala": "B07",
+					"week": "Quinta"
+				}
+			]
 		},
 		{
 			"name": "Química",
@@ -60,13 +64,13 @@
 					"start": "8:50",
 					"aulas": 2,
 					"sala": "B06",
-					"week": 3
+					"week": "Quarta"
 				},
 				{
 					"start": "7:10",
 					"aulas": 2,
 					"sala": "B04",
-					"week": 4
+					"week": "Quinta"
 				}
 			]
 		},
@@ -76,16 +80,15 @@
 					"start": "10:30",
 					"aulas": 2,
 					"sala": "B07",
-					"week": 4
+					"week": "Quinta"
 				},
 				{
 					"start": "8:50",
 					"aulas": 2,
 					"sala": "B08",
-					"week": 5
+					"week": "Sexta"
 				}
 			]
 		}
 	]
-
 }
