@@ -1,49 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     border: 0;
-    font-family: 'Calibri';
+    font-family: 'Arimo', sans-serif;
     font-size: 17px;
+}
+body {
+   background-color: #434750;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+}
+.container {
+    width: 920px;
+    margin: auto;
+    position: relative;
+    background-color: #3e3f46
+}
+
+.linha {
+    position: relative;
+    display: flex;
+    height: 90px;
+    background-color: #3e3f46;
+}
+
+.data{
+    position: absolute;
+    height: 100%;
+    left: calc(120px + var(--l)*var(--w));
+    width: calc(var(--w)*var(--q));
     
 }
 
-table, td,th{
-    margin-top: 1em;
-    border: 1px solid black;
-    border-collapse: collapse
+#header .data {
+    position: relative;
 }
 
-thead{
-    color: aliceblue;
-    background-color: #5E498C;
-}
-th {
-    width: 3em;
-    height: 2em;
-    
-}
-td{
-    text-align: center
-}
-table{
-    width: 70%;
-    margin-inline: auto;
+.hora{
+    width: var(--w);
+    background-color: #3e3f46
 }
 
+p{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.25em;
+    color: #fff;
+}
 
-.destaque > th, .destaque >td {
-        background-color: #41A69C;
-        font-size: 1.40em;
-    }
+.destaque{
+    background-color: #41A69C;
+}
 
-@media screen and (max-width: 800px) {
-        table{
-            width: 90%;
-        }
-        th,td{
-            font-size: 0.8em;
-        }
-        .destaque > th, .destaque >td{
-        font-size: 1em;
-    }
-} 
+.vazio {
+    width: 120px;
+}
+
+.dia_semana{
+    width: 120px;
+}
