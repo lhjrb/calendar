@@ -1,92 +1,108 @@
 {
 	"materias": [{
-			"name": "Geometria Analítica",
+			"name": "Álgebra linear",
+			"turma": "FM",
+			"info": [{
+					"start": "10:30",
+					"aulas": 2,
+					"sala": "K13",
+					"week": "Quarta"
+				},
+				{
+					"start": "10:30",
+					"aulas": 2,
+					"sala": "K13",
+					"week": "Quinta"
+				}
+			]
+		},
+		{
+			"name": "Cálculo",
+			"turma": "EM",
 			"info": [{
 					"start": "8:50",
 					"aulas": 2,
-					"sala": "B01",
+					"sala": "k05",
 					"week": "Segunda"
 				},
 				{
-					"start": "10:30",
+					"start": "7:10",
 					"aulas": 2,
-					"sala": "B08",
-					"week": "Sexta"
+					"sala": "I15",
+					"week": "Quarta"
 				}
 			]
-		},
-		{
-			"name": "Português",
-			"info": [{
-				"start": "10:30",
-				"aulas": 2,
-				"sala": "B01",
-				"week": "Segunda"
-			}]
-		},
-		{
-			"name": "Sociologia",
-			"info": [{
-				"start": "7:10",
-				"aulas": 2,
-				"sala": "B04",
-				"week": "Terça"
-			}]
-		},
-		{
-			"name": "Introdução Eletrônica",
+		}, {
+			"name": "Engenharia Econômica",
+			"turma": "CM",
 			"info": [{
 				"start": "8:50",
 				"aulas": 2,
-				"sala": "B09",
-				"week": "Terça"
+				"sala": "I14",
+				"week": "Quinta"
 			}]
-		},
-		{
-			"name": "Programação 1",
-			"info": [{
-					"start": "7:10",
-					"aulas": 2,
-					"sala": "B07",
-					"week": "Quarta"
-				},
-				{
-					"start": "8:50",
-					"aulas": 2,
-					"sala": "B07",
-					"week": "Quinta"
-				}
-			]
-		},
-		{
-			"name": "Química",
-			"info": [{
-					"start": "8:50",
-					"aulas": 2,
-					"sala": "B06",
-					"week": "Quarta"
-				},
-				{
-					"start": "7:10",
-					"aulas": 2,
-					"sala": "B04",
-					"week": "Quinta"
-				}
-			]
-		},
-		{
-			"name": "Cálculo 1",
+		}, {
+			"name": "Expressão Gráfica",
+			"turma": "AM",
 			"info": [{
 					"start": "10:30",
 					"aulas": 2,
+					"sala": "I09",
+					"week": "Terça"
+				},
+				{
+					"start": "8:00",
+					"aulas": 3,
+					"sala": "G03-LIP7",
+					"week": "Sexta"
+				}
+			]
+		}, {
+			"name": "Física 1",
+			"turma": "EM",
+			"info": [{
+					"start": "7:10",
+					"aulas": 2,
+					"sala": "I13",
+					"week": "Terça"
+				},
+				{
+					"start": "7:10",
+					"aulas": 2,
 					"sala": "B07",
 					"week": "Quinta"
+				}
+			]
+		}, {
+			"name": "Probabilidade e Estatística",
+			"turma": "2E",
+			"info": [{
+					"start": "10:30",
+					"aulas": 2,
+					"sala": "B03",
+					"week": "Segunda"
 				},
 				{
 					"start": "8:50",
 					"aulas": 2,
-					"sala": "B08",
-					"week": "Sexta"
+					"sala": "K11",
+					"week": "Terça"
+				}
+			]
+		}, {
+			"name": "Programação e Estrutura de Dados",
+			"turma": "E2",
+			"info": [{
+					"start": "7:10",
+					"aulas": 2,
+					"sala": "F01-LIP01",
+					"week": "Segunda"
+				},
+				{
+					"start": "8:50",
+					"aulas": 2,
+					"sala": "H04-LIP03",
+					"week": "Quarta"
 				}
 			]
 		}
